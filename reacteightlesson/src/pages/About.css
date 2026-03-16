@@ -1,0 +1,45 @@
+.about-page { padding: 2rem; }
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #97ce4c;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #2a2a4a;
+  transition: transform 0.2s;
+}
+
+.about-card:hover { transform: translateY(-4px); }
+
+.about-icon { font-size: 2rem; }
+
+.about-card h2 {
+  color: #97ce4c;
+  margin: 0.8rem 0 0.4rem;
+}
+
+.about-card p { color: #aaa; font-size: 0.9rem; }

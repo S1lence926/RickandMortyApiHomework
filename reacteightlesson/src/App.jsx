@@ -154,12 +154,18 @@
 import { Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import Characters from "./pages/Characters"
+import Episodes from "./pages/Episodes"
+import About from "./pages/About"
+import NotFound from "./pages/NotFound"
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Characters />} />
+        <Route path="episodes" element={<Episodes />} />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )

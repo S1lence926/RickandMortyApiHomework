@@ -17,6 +17,8 @@ function Navbar() {
       <span className="logo">Rick & Morty</span>
       <div className="nav-links">
         <NavLink to="/" end>Characters</NavLink>
+        <NavLink to="/episodes">Episodes</NavLink>
+        <NavLink to="/about">About</NavLink>
       </div>
     </nav>
   )
