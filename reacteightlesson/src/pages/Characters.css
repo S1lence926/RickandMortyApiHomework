@@ -1,0 +1,60 @@
+/* Characters.css */
+.characters-page {
+  padding: 2rem;
+}
+
+.characters-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #97ce4c;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(151, 206, 76, 0.2);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-info {
+  padding: 0.75rem 1rem;
+}
+
+.card-info h2 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+.status { font-size: 0.85rem; }
+.status.alive  { color: #97ce4c; }
+.status.dead   { color: #e74c3c; }
+.status.unknown { color: #aaa; }
+
+.status-text { color: #aaa; font-size: 0.9rem; }
+
+.status.loading { text-align: center; padding: 4rem; font-size: 1.2rem; }
+.status.error   { text-align: center; padding: 4rem; color: #e74c3c; }
+.species, .gender, .origin {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0.2rem 0;
+}
